@@ -20,13 +20,13 @@ jobs:
       matrix:
         include:
           - dockerfile: ./Dockerfile
-            image: ghcr.io/mat-o-lab/openbismantic
+            image: ghcr.io/cezary17/openbismantic
             context: .
           - dockerfile: ./init_database/Dockerfile
-            image: ghcr.io/mat-o-lab/openbismantic_init
+            image: ghcr.io/cezary17/openbismantic_init
             context: ./init_database
           - dockerfile: ./openbismantic_api/Dockerfile
-            image: ghcr.io/mat-o-lab/openbismantic_api
+            image: ghcr.io/cezary17/openbismantic_api
             context: ./openbismantic_api
     permissions:
       contents: read
